@@ -1,0 +1,41 @@
+API Gateway
+
+1. Create Resource
+- Enable API Gateway CORS: to call from UI React to API Gateway
+
+2. Inside products
+- Create new child resource: for products/{id}
+- must be Resource Path: /products/{id} to be dynamic
+- Enable CORS
+
+3. in /{id}
+- Create action: POST
+- Integration type: Lambda
+- Use Lambda proxy
+
+4. POST > Method execution
+- Authorization: AWS_IAM
+- Request validator: Choose appropriate.
+- HTTP Request Header: Add Content-Type
+- Request body: 
+  + Must create model first (left hand menu)
+  + Then add it here with application/json
+
+5. TEST Request
+Header
+Content-Type: application/json
+Body 
+{
+    "id": "12348",
+    "productname": "generators" 
+}
+
+6. Deploy API
+
+7. Auth COGNITO 
+- Message customization: Link is easier
+- App clients:
+  + name
+  + Unselect generate client secret
+- App integration:
+  + Domain: anything unique

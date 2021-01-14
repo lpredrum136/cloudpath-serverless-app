@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+hexal-serverless-starter/node_modules
+hexal-serverless-starter/.pnp
+hexal-serverless-starter/.pnp.js
+
+# testing
+hexal-serverless-starter/coverage
+
+# production
+hexal-serverless-starter/build
+
+# misc
+hexal-serverless-starter/.DS_Store
+hexal-serverless-starter/.env.local
+hexal-serverless-starter/.env.development.local
+hexal-serverless-starter/.env.test.local
+hexal-serverless-starter/.env.production.local
+
+hexal-serverless-starter/npm-debug.log*
+hexal-serverless-starter/yarn-debug.log*
+hexal-serverless-starter/yarn-error.log*
