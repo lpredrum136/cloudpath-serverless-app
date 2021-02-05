@@ -34,7 +34,7 @@ Body
 
 7. Auth COGNITO 
 - Message customization: Link is easier
-- App clients:
+- App clients (create after user pool is created):
   + name
   + Unselect generate client secret
 - App integration:
