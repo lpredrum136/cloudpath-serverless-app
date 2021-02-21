@@ -38,4 +38,4 @@ Body
   + name
   + Unselect generate client secret
 - App integration:
-  + Domain: anything unique
+  + Domain: anything unique (must do this)
